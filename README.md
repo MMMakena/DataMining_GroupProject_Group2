@@ -9,6 +9,10 @@ Apply the full data pipeline from ETL → Data Mining → Insights &amp; Storyte
 - Esther_399 -  Responsible for EDA & dashboard visualizations.
 - Julie_996 -  Responsible for EDA & dashboard visualizations.
 
+# Data Cleaning and Enrichment (By Queem)
+This script processes finance_dataset.csv by cleaning (handling missing values, standardizing formats, removing outliers) and enriching with calculated fields (Profit_Margin, Revenue_Growth).
+
+<img width="1124" height="569" alt="image" src="https://github.com/user-attachments/assets/e7cd4401-6f0d-4b74-aabd-e7b0af4c0f95" />
 
 # Exploratory & Statistical Analysis (By Julie&Esthet)
 
