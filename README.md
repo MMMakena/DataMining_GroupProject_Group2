@@ -3,7 +3,7 @@ Apply the full data pipeline from ETL → Data Mining → Insights &amp; Storyte
 
 # TEAM MEMBERS & Contributions
 - Mitchel_413
-- Queen_897
+- Queen_897 - Responsible for Data Cleaning and Enrichment.
 - Claire_470
 - Kyra_619
 - Esther_399 -  Responsible for EDA & dashboard visualizations.
@@ -28,9 +28,6 @@ This script processes finance_dataset.csv by cleaning (handling missing values, 
 <img width="924" height="422" alt="image" src="https://github.com/user-attachments/assets/6bb50240-f444-41e5-b6f4-e7e4b9b24fac" />
 # Results for enriching data
 <img width="858" height="670" alt="image" src="https://github.com/user-attachments/assets/cfe934dd-ca25-45ba-b490-23ba580548da" />
-
-# Load Data
-<img width="893" height="664" alt="image" src="https://github.com/user-attachments/assets/6844baf4-60fd-4cce-b63e-c677719afcda" />
 
 # Exploratory & Statistical Analysis (By Julie&Esthet)
 
