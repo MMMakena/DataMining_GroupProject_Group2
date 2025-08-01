@@ -117,4 +117,4 @@ This section focuses on exploring and statistically analyzing the dataset to unc
 - The code uses the same numeric features from the dataset.
 - It fits an Isolation Forest model, which is designed to detect outliers or anomalies in the data.
 - The results are visualized in a scatter plot, with normal points in blue and anomalies in red.
-
+![alt text](image-2.png)
