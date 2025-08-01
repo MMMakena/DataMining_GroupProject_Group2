@@ -29,7 +29,7 @@ This script processes finance_dataset.csv by cleaning (handling missing values, 
 # Results for enriching data
 <img width="858" height="670" alt="image" src="https://github.com/user-attachments/assets/cfe934dd-ca25-45ba-b490-23ba580548da" />
 
-# Exploratory & Statistical Analysis (By Julie&Esther)
+# Exploratory & Statistical Analysis (By Julie & Esther)
 
 This section focuses on exploring and statistically analyzing the dataset to uncover meaningful patterns, trends, and differences across companies based on their financial indicators.
 
