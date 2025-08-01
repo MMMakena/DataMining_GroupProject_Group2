@@ -2,7 +2,7 @@
 Apply the full data pipeline from ETL → Data Mining → Insights &amp; Storytelling to a chosen dataset or  the previously cleaned data. Use mining techniques to uncover patterns, trends, and insights that can  inform decision-making.
 
 # TEAM MEMBERS & Contributions
-- Mitchel_413
+- Mitchel_413 - Responsible for the Data Mining
 - Queen_897 - Responsible for Data Cleaning and Enrichment.
 - Claire_470
 - Kyra_619
@@ -29,7 +29,7 @@ This script processes finance_dataset.csv by cleaning (handling missing values, 
 # Results for enriching data
 <img width="858" height="670" alt="image" src="https://github.com/user-attachments/assets/cfe934dd-ca25-45ba-b490-23ba580548da" />
 
-# Exploratory & Statistical Analysis (By Julie&Esthet)
+# Exploratory & Statistical Analysis (By Julie&Esther)
 
 This section focuses on exploring and statistically analyzing the dataset to uncover meaningful patterns, trends, and differences across companies based on their financial indicators.
 
@@ -102,3 +102,19 @@ This section focuses on exploring and statistically analyzing the dataset to unc
 - Analyzed inter-variable relationships using correlation heatmaps.
 - Conducted group-level analysis using ANOVA and pairwise t-tests.
 - Interpreted statistical results to draw company-level performance insights.
+
+## Data Mining Techniques(By Mitchel and Kyra)
+**Clustering with K-Means**
+- The codes loads the cleaned finance dataset and selects only numeric columns.
+- It standardizes these features so they have a mean of 0 and standard deviation of 1.
+- The "elbow method " is used to help choose the best number of clusters by plotting inertia for different values of k.
+- K-Means clustering is then applied(k=3) and each record is assigned to a cluster.
+- Finally, a scatter plot visualizes the clusters using the first two features.
+![alt text](image.png)
+![alt text](image-1.png)
+
+**Anomaly Detection with Isolation Forest**
+- The code uses the same numeric features from the dataset.
+- It fits an Isolation Forest model, which is designed to detect outliers or anomalies in the data.
+- The results are visualized in a scatter plot, with normal points in blue and anomalies in red.
+
