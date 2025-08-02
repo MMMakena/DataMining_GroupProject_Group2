@@ -148,5 +148,10 @@ print(confusion_matrix(y_test, y_pred))
 print("\nClassification Report:")
 print(classification_report(y_test, y_pred))
 ```
-
+- First, it imports the necessary libraries for model training, evaluation, and visualization.
+-  The `features` list specifies which columns from the dataset will be used as input variables (such as stock price, revenue, net income, market cap, EPS, profit margin, and revenue growth).
+- The target variable, `y_cls`, is the 'High_Performance' column, which likely indicates whether a company meets a certain performance threshold.
+- The data is split into training and testing sets using `train_test_split`, with 20% of the data reserved for testing.
+- Finally, the code prints out a confusion matrix and a classification report. 
+- The confusion matrix shows how many predictions were correct or incorrect for each class, while the classification report provides metrics such as precision, recall, f1-score, and accuracy, giving a detailed summary of the model's performance.
 
