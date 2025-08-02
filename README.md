@@ -104,6 +104,7 @@ This section focuses on exploring and statistically analyzing the dataset to unc
 - Interpreted statistical results to draw company-level performance insights.
 
 ## Data Mining Techniques(By Mitchel and Kyra)
+File name : notebooks/`3-data_mining.ipynb`
 **Clustering with K-Means**
 - The codes loads the cleaned finance dataset and selects only numeric columns.
 - It standardizes these features so they have a mean of 0 and standard deviation of 1.
@@ -118,3 +119,31 @@ This section focuses on exploring and statistically analyzing the dataset to unc
 - It fits an Isolation Forest model, which is designed to detect outliers or anomalies in the data.
 - The results are visualized in a scatter plot, with normal points in blue and anomalies in red.
 ![alt text](image-2.png)
+
+**Classification and Decision Tree Analysis**
+- First, create a target column for classification.
+
+```# Train and evaluate Decision Tree classifier
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier, plot_tree
+from sklearn.metrics import classification_report, confusion_matrix
+
+features = ['Stock_Price', 'Revenue_Millions', 'Net_Income_Millions',
+            'Market_Cap_Billions', 'EPS', 'Profit_Margin', 'Revenue_Growth']
+X_cls = df[features]
+y_cls = df['High_Performance']
+
+X_train, X_test, y_train, y_test = train_test_split(X_cls, y_cls, test_size=0.2, random_state=50)
+
+clf = DecisionTreeClassifier(random_state=50)
+clf.fit(X_train, y_train)
+
+y_pred = clf.predict(X_test)
+
+print("Confusion Matrix:")
+print(confusion_matrix(y_test, y_pred))
+
+print("\nClassification Report:")
+print(classification_report(y_test, y_pred))```
+
+- This code block demonstrates how to train and evaluate a Decision Tree classifier to predict whether a company in the finance dataset is considered "High Performance."
