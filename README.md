@@ -123,7 +123,9 @@ File name : notebooks/`3-data_mining.ipynb`
 **Classification and Decision Tree Analysis**
 - First, create a target column for classification.
 
-```# Train and evaluate Decision Tree classifier
+- This code block demonstrates how to train and evaluate a Decision Tree classifier to predict whether a company in the finance dataset is considered "High Performance."
+```
+# Train and evaluate Decision Tree classifier
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier, plot_tree
 from sklearn.metrics import classification_report, confusion_matrix
@@ -144,5 +146,7 @@ print("Confusion Matrix:")
 print(confusion_matrix(y_test, y_pred))
 
 print("\nClassification Report:")
-print(classification_report(y_test, y_pred))```
+print(classification_report(y_test, y_pred))
+```
+
 
