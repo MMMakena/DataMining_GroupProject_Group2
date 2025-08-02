@@ -146,4 +146,3 @@ print(confusion_matrix(y_test, y_pred))
 print("\nClassification Report:")
 print(classification_report(y_test, y_pred))```
 
-- This code block demonstrates how to train and evaluate a Decision Tree classifier to predict whether a company in the finance dataset is considered "High Performance."
