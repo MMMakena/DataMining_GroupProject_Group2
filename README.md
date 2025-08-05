@@ -5,7 +5,7 @@ Apply the full data pipeline from ETL → Data Mining → Insights &amp; Storyte
 - Mitchel_413 - Responsible for the Data Mining
 - Queen_897 - Responsible for Data Cleaning and Enrichment.
 - Claire_470 - Responsible for Insight dashboard and Presentation deck.
-- Kyra_619
+- Kyra_619 - Responsible for Data Mining
 - Esther_399 -  Responsible for EDA & dashboard visualizations.
 - Julie_996 -  Responsible for EDA & dashboard visualizations.
 
