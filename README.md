@@ -118,7 +118,7 @@ File name : notebooks/`3-data_mining.ipynb`
 - The code uses the same numeric features from the dataset.
 - It fits an Isolation Forest model, which is designed to detect outliers or anomalies in the data.
 - The results are visualized in a scatter plot, with normal points in blue and anomalies in red.
-![alt text](image-2.png)
+![alt text](images/image-2.png)
 
 **Classification and Decision Tree Analysis**
 - First, create a target column for classification.
@@ -163,25 +163,25 @@ print(classification_report(y_test, y_pred))
 - Next, I loaded the new dataset into Power BI and created 4 visuals to the `presentation.pbix`:
 1. Line Chart: Stock Price Over Time
 Goal: Show trends and performance over time
-![alt text](image-4.png)
+![alt text](images/image-4.png)
 
 2. Donut Chart: High vs Low Performing
 Goal: Show the share of high-performance companies
 (True = High performer, False = Not)
-![alt text](image-5.png)
+![alt text](images/image-5.png)
 
 3. Bar Chart: Avg Profit Margin by Cluster
 Goal: Highlight which clusters are most profitable
-![alt text](image-6.png)
+![alt text](images/image-6.png)
 
 4. Table: Anomalies Detail
 Goal: View flagged risk periods or outliers
-![alt text](image-7.png)
+![alt text](images/image-7.png)
 - I also added slicers to the deck to add interactivity to the visuals:
-![alt text](image-8.png)
+![alt text](images/image-8.png)
 
 - I then created an `executive_summary.pdf` in which I summarized our project objectives and process. I also included 3 actionable insights which I provided a chunk of code for reference in `4_insights_dashboard.ipynb` and included the generated results in the `executive_summary.pdf`.
 Code:
-![alt text](image.png)
+![alt text](images/image.png)
 Output used for analysis:
-![alt text](image-1.png)
+![alt text](images/image-1.png)
