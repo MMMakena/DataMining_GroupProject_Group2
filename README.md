@@ -162,26 +162,33 @@ print(classification_report(y_test, y_pred))
 
 - Next, I loaded the new dataset into Power BI and created 4 visuals to the `presentation.pbix`:
 1. Line Chart: Stock Price Over Time
-Goal: Show trends and performance over time
+- Goal: Show trends and performance over time.
+
 ![alt text](images/image-4.png)
 
-2. Donut Chart: High vs Low Performing
+3. Donut Chart: High vs Low Performing
 Goal: Show the share of high-performance companies
-(True = High performer, False = Not)
+- (True = High performer, False = Not)
+  
 ![alt text](images/image-5.png)
 
-3. Bar Chart: Avg Profit Margin by Cluster
-Goal: Highlight which clusters are most profitable
+4. Bar Chart: Avg Profit Margin by Cluster
+- Goal: Highlight which clusters are most profitable.
+  
 ![alt text](images/image-6.png)
 
-4. Table: Anomalies Detail
-Goal: View flagged risk periods or outliers
+5. Table: Anomalies Detail
+- Goal: View flagged risk periods or outliers.
+
 ![alt text](images/image-7.png)
 - I also added slicers to the deck to add interactivity to the visuals:
+  
 ![alt text](images/image-8.png)
 
 - I then created an `executive_summary.pdf` in which I summarized our project objectives and process. I also included 3 actionable insights which I provided a chunk of code for reference in `4_insights_dashboard.ipynb` and included the generated results in the `executive_summary.pdf`.
-Code:
+- Code:
+  
 ![alt text](images/image-9.png)
-Output used for analysis:
+- Output used for analysis:
+  
 ![alt text](images/image-10.png)
