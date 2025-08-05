@@ -111,8 +111,8 @@ File name : notebooks/`3-data_mining.ipynb`
 - The "elbow method " is used to help choose the best number of clusters by plotting inertia for different values of k.
 - K-Means clustering is then applied(k=3) and each record is assigned to a cluster.
 - Finally, a scatter plot visualizes the clusters using the first two features.
-![alt text](image.png)
-![alt text](image-1.png)
+![alt text](images/image.png)
+![alt text](images/image-1.png)
 
 **Anomaly Detection with Isolation Forest**
 - The code uses the same numeric features from the dataset.
@@ -182,6 +182,6 @@ Goal: View flagged risk periods or outliers
 
 - I then created an `executive_summary.pdf` in which I summarized our project objectives and process. I also included 3 actionable insights which I provided a chunk of code for reference in `4_insights_dashboard.ipynb` and included the generated results in the `executive_summary.pdf`.
 Code:
-![alt text](images/image.png)
+![alt text](images/image-9.png)
 Output used for analysis:
-![alt text](images/image-1.png)
+![alt text](images/image-10.png)
