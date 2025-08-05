@@ -2,10 +2,10 @@
 Apply the full data pipeline from ETL → Data Mining → Insights &amp; Storytelling to a chosen dataset or the previously cleaned data. Use mining techniques to uncover patterns, trends, and insights that can  inform decision-making.
 
 # TEAM MEMBERS & Contributions
-- Mitchel_413 - Responsible for the Data Mining
+- Mitchel_413 - Responsible for the Data Mining.
 - Queen_897 - Responsible for Data Cleaning and Enrichment.
 - Claire_470 - Responsible for Insight dashboard and Presentation deck.
-- Kyra_619 - Responsible for Mining
+- Kyra_619 - Responsible for the Data Mining.
 - Esther_399 -  Responsible for EDA & dashboard visualizations.
 - Julie_996 -  Responsible for EDA & dashboard visualizations.
 
