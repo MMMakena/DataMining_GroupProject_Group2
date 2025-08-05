@@ -1,10 +1,10 @@
 # DataMining_GroupProject_Group2
-Apply the full data pipeline from ETL → Data Mining → Insights &amp; Storytelling to a chosen dataset or  the previously cleaned data. Use mining techniques to uncover patterns, trends, and insights that can  inform decision-making.
+Apply the full data pipeline from ETL → Data Mining → Insights &amp; Storytelling to a chosen dataset or the previously cleaned data. Use mining techniques to uncover patterns, trends, and insights that can  inform decision-making.
 
 # TEAM MEMBERS & Contributions
 - Mitchel_413 - Responsible for the Data Mining
 - Queen_897 - Responsible for Data Cleaning and Enrichment.
-- Claire_470
+- Claire_470 - Responsible for Insight dashboard and Presentation deck.
 - Kyra_619
 - Esther_399 -  Responsible for EDA & dashboard visualizations.
 - Julie_996 -  Responsible for EDA & dashboard visualizations.
@@ -155,3 +155,33 @@ print(classification_report(y_test, y_pred))
 - Finally, the code prints out a confusion matrix and a classification report. 
 - The confusion matrix shows how many predictions were correct or incorrect for each class, while the classification report provides metrics such as precision, recall, f1-score, and accuracy, giving a detailed summary of the model's performance.
 
+## Insight and Storytelling (by Claire)
+- I changed the `Date` in the `with_clusters_anomalies_and_labels.csv` file to `datetime` and saved the file as a new `data_for_powerbi.csv` file.
+
+- I then loaded the data into power BI and changed the formatting for some of the columns through the Query tab so that power BI classifies them properly. The columns formatted are `Cluster` and `Anomaly` which were originally categorized as numerical, which I changed to categorical (text).
+
+- Next, I loaded the new dataset into Power BI and created 4 visuals to the `presentation.pbix`:
+1. Line Chart: Stock Price Over Time
+Goal: Show trends and performance over time
+![alt text](image-4.png)
+
+2. Donut Chart: High vs Low Performing
+Goal: Show the share of high-performance companies
+(True = High performer, False = Not)
+![alt text](image-5.png)
+
+3. Bar Chart: Avg Profit Margin by Cluster
+Goal: Highlight which clusters are most profitable
+![alt text](image-6.png)
+
+4. Table: Anomalies Detail
+Goal: View flagged risk periods or outliers
+![alt text](image-7.png)
+- I also added slicers to the deck to add interactivity to the visuals:
+![alt text](image-8.png)
+
+- I then created an `executive_summary.pdf` in which I summarized our project objectives and process. I also included 3 actionable insights which I provided a chunk of code for reference in `4_insights_dashboard.ipynb` and included the generated results in the `executive_summary.pdf`.
+Code:
+![alt text](image.png)
+Output used for analysis:
+![alt text](image-1.png)
