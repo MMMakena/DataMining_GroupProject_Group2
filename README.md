@@ -2,33 +2,51 @@
 Apply the full data pipeline from ETL → Data Mining → Insights &amp; Storytelling to a chosen dataset or the previously cleaned data. Use mining techniques to uncover patterns, trends, and insights that can  inform decision-making.
 
 # TEAM MEMBERS & Contributions
-- Mitchel_413 - Responsible for the Data Mining
+- Mitchel_413 - Responsible for the Data Mining.
 - Queen_897 - Responsible for Data Cleaning and Enrichment.
 - Claire_470 - Responsible for Insight dashboard and Presentation deck.
-- Kyra_619
+- Kyra_619 - Responsible for the Data Mining.
 - Esther_399 -  Responsible for EDA & dashboard visualizations.
 - Julie_996 -  Responsible for EDA & dashboard visualizations.
 
 # Data Cleaning and Enrichment (By Queen)
 This script processes finance_dataset.csv by cleaning (handling missing values, standardizing formats, removing outliers) and enriching with calculated fields (Profit_Margin, Revenue_Growth).
-# Section by Queen Data Extraction
-<img width="749" height="403" alt="image" src="https://github.com/user-attachments/assets/601a18b3-b794-4c4f-9198-790bee87905b" />
 
-# Load Data
-<img width="893" height="664" alt="image" src="https://github.com/user-attachments/assets/6844baf4-60fd-4cce-b63e-c677719afcda" />
 # Loaded Original data Results
 <img width="1208" height="719" alt="image" src="https://github.com/user-attachments/assets/390348a1-c79f-47bf-a874-1b17f76c1149" />
 
 # Data Cleaning 
+Cleaning: Handles missing values, standardizes Date, removes outliers (e.g., Revenue_Millions 72517.50).
 <img width="1124" height="569" alt="image" src="https://github.com/user-attachments/assets/e7cd4401-6f0d-4b74-aabd-e7b0af4c0f95" />
 # Results for clean Data
 <img width="870" height="721" alt="image" src="https://github.com/user-attachments/assets/751ecc98-b8f0-4d8a-be3c-f89582d84c77" />
 
+# Extraction
+<img width="749" height="403" alt="image" src="https://github.com/user-attachments/assets/601a18b3-b794-4c4f-9198-790bee87905b" />
+
+## Transformation
 # Data Enrichment
+Enrichment: Adds Profit_Margin and Revenue_Growth.
 <img width="924" height="422" alt="image" src="https://github.com/user-attachments/assets/6bb50240-f444-41e5-b6f4-e7e4b9b24fac" />
+
 # Results for enriching data
 <img width="858" height="670" alt="image" src="https://github.com/user-attachments/assets/cfe934dd-ca25-45ba-b490-23ba580548da" />
 
+# Load Data
+<img width="893" height="664" alt="image" src="https://github.com/user-attachments/assets/6844baf4-60fd-4cce-b63e-c677719afcda" />
+
+Output File: The script produces cleaned_finance_dataset.csv in data/processed/, which includes:
+
+Columns (9): Date (datetime), Company (string), Stock_Price (float), Revenue_Millions (float, outlier removed), Net_Income_Millions (float), Market_Cap_Billions (float), EPS (float), Profit_Margin (float), Revenue_Growth (float).
+Rows: 164 (after removing the outlier).
+
+## Tools used
+**Pandas**:For data manipulation, used to:
+Load and process finance_dataset.csv.
+Handle missing values (e.g., filling numeric columns with median, Company with ‘Unknown’).
+Standardize the Date column to datetime.
+Perform calculations for Profit_Margin and Revenue_Growth.
+**NumPy**:For numerical operations
 # Exploratory & Statistical Analysis (By Julie & Esther)
 
 This section focuses on exploring and statistically analyzing the dataset to uncover meaningful patterns, trends, and differences across companies based on their financial indicators.
@@ -111,8 +129,8 @@ File name : notebooks/`3-data_mining.ipynb`
 - The "elbow method " is used to help choose the best number of clusters by plotting inertia for different values of k.
 - K-Means clustering is then applied(k=3) and each record is assigned to a cluster.
 - Finally, a scatter plot visualizes the clusters using the first two features.
-![alt text](image.png)
-![alt text](image-1.png)
+![alt text](images/image.png)
+![alt text](images/image-1.png)
 
 **Anomaly Detection with Isolation Forest**
 - The code uses the same numeric features from the dataset.
@@ -162,26 +180,33 @@ print(classification_report(y_test, y_pred))
 
 - Next, I loaded the new dataset into Power BI and created 4 visuals to the `presentation.pbix`:
 1. Line Chart: Stock Price Over Time
-Goal: Show trends and performance over time
+- Goal: Show trends and performance over time.
+
 ![alt text](images/image-4.png)
 
-2. Donut Chart: High vs Low Performing
+3. Donut Chart: High vs Low Performing
 Goal: Show the share of high-performance companies
-(True = High performer, False = Not)
+- (True = High performer, False = Not)
+  
 ![alt text](images/image-5.png)
 
-3. Bar Chart: Avg Profit Margin by Cluster
-Goal: Highlight which clusters are most profitable
+4. Bar Chart: Avg Profit Margin by Cluster
+- Goal: Highlight which clusters are most profitable.
+  
 ![alt text](images/image-6.png)
 
-4. Table: Anomalies Detail
-Goal: View flagged risk periods or outliers
+5. Table: Anomalies Detail
+- Goal: View flagged risk periods or outliers.
+
 ![alt text](images/image-7.png)
 - I also added slicers to the deck to add interactivity to the visuals:
+  
 ![alt text](images/image-8.png)
 
 - I then created an `executive_summary.pdf` in which I summarized our project objectives and process. I also included 3 actionable insights which I provided a chunk of code for reference in `4_insights_dashboard.ipynb` and included the generated results in the `executive_summary.pdf`.
-Code:
-![alt text](images/image.png)
-Output used for analysis:
-![alt text](images/image-1.png)
+- Code:
+  
+![alt text](images/image-9.png)
+- Output used for analysis:
+  
+![alt text](images/image-10.png)
