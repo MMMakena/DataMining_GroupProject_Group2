@@ -5,7 +5,7 @@ Apply the full data pipeline from ETL → Data Mining → Insights &amp; Storyte
 - Mitchel_413 - Responsible for the Data Mining
 - Queen_897 - Responsible for Data Cleaning and Enrichment.
 - Claire_470 - Responsible for Insight dashboard and Presentation deck.
-- Kyra_619
+- Kyra_619 - Responsible for data mining
 - Esther_399 -  Responsible for EDA & dashboard visualizations.
 - Julie_996 -  Responsible for EDA & dashboard visualizations.
 
@@ -39,7 +39,13 @@ Output File: The script produces cleaned_finance_dataset.csv in data/processed/,
 
 Columns (9): Date (datetime), Company (string), Stock_Price (float), Revenue_Millions (float, outlier removed), Net_Income_Millions (float), Market_Cap_Billions (float), EPS (float), Profit_Margin (float), Revenue_Growth (float).
 Rows: 164 (after removing the outlier).
-
+## Tools used
+**Pandas**:For data manipulation, used to:
+Load and process finance_dataset.csv.
+Handle missing values (e.g., filling numeric columns with median, Company with ‘Unknown’).
+Standardize the Date column to datetime.
+Perform calculations for Profit_Margin and Revenue_Growth.
+**NumPy**:For numerical operations
 
 # Exploratory & Statistical Analysis (By Julie & Esther)
 
