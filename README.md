@@ -11,23 +11,35 @@ Apply the full data pipeline from ETL → Data Mining → Insights &amp; Storyte
 
 # Data Cleaning and Enrichment (By Queen)
 This script processes finance_dataset.csv by cleaning (handling missing values, standardizing formats, removing outliers) and enriching with calculated fields (Profit_Margin, Revenue_Growth).
-# Section by Queen Data Extraction
-<img width="749" height="403" alt="image" src="https://github.com/user-attachments/assets/601a18b3-b794-4c4f-9198-790bee87905b" />
 
-# Load Data
-<img width="893" height="664" alt="image" src="https://github.com/user-attachments/assets/6844baf4-60fd-4cce-b63e-c677719afcda" />
 # Loaded Original data Results
 <img width="1208" height="719" alt="image" src="https://github.com/user-attachments/assets/390348a1-c79f-47bf-a874-1b17f76c1149" />
 
 # Data Cleaning 
+Cleaning: Handles missing values, standardizes Date, removes outliers (e.g., Revenue_Millions 72517.50).
 <img width="1124" height="569" alt="image" src="https://github.com/user-attachments/assets/e7cd4401-6f0d-4b74-aabd-e7b0af4c0f95" />
 # Results for clean Data
 <img width="870" height="721" alt="image" src="https://github.com/user-attachments/assets/751ecc98-b8f0-4d8a-be3c-f89582d84c77" />
 
+# Extraction
+<img width="749" height="403" alt="image" src="https://github.com/user-attachments/assets/601a18b3-b794-4c4f-9198-790bee87905b" />
+
+## Transformation
 # Data Enrichment
+Enrichment: Adds Profit_Margin and Revenue_Growth.
 <img width="924" height="422" alt="image" src="https://github.com/user-attachments/assets/6bb50240-f444-41e5-b6f4-e7e4b9b24fac" />
+
 # Results for enriching data
 <img width="858" height="670" alt="image" src="https://github.com/user-attachments/assets/cfe934dd-ca25-45ba-b490-23ba580548da" />
+
+# Load Data
+<img width="893" height="664" alt="image" src="https://github.com/user-attachments/assets/6844baf4-60fd-4cce-b63e-c677719afcda" />
+
+Output File: The script produces cleaned_finance_dataset.csv in data/processed/, which includes:
+
+Columns (9): Date (datetime), Company (string), Stock_Price (float), Revenue_Millions (float, outlier removed), Net_Income_Millions (float), Market_Cap_Billions (float), EPS (float), Profit_Margin (float), Revenue_Growth (float).
+Rows: 164 (after removing the outlier).
+
 
 # Exploratory & Statistical Analysis (By Julie & Esther)
 
