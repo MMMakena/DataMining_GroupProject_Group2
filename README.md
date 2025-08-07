@@ -267,6 +267,7 @@ print(anomalies[["Date", "Company", "Stock_Price", "Profit_Margin"]])
 ```
 
 - Output generated:
+
 ![alt text](images/image-10.png)
 
 - Key insights from code:
